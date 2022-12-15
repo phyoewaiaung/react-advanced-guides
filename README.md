@@ -7,4 +7,4 @@
   &emsp;***Step2***: navigate your cloned folder and run `npm install` cmd.<br>
   &emsp;***Step3***; After `npm install` cmd complete, run `npm start` cmd to start project.<br><br>
  
- > Connect With Me on :arrow_right: [LinkedIn](https://www.linkedin.com/in/phyoewaiaung082/)
+ > Connect With Me on :fast_forward: [LinkedIn](https://www.linkedin.com/in/phyoewaiaung082/)
