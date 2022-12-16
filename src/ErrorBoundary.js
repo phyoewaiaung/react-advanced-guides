@@ -4,17 +4,23 @@ class ErrorBoundary extends Component {
     constructor(props) {
       super(props);
       this.state = { error: null, errorInfo: null, };
+      this.handleClick = this.handleClick.bind(this);
     }
 
-    static getDerivedStateFromError(error){
-        return { error : true}
+    static getDerivedStateFromError(e,c){
+        return {error:e,errorInfo:"This Is Error Information!"}
     }
 
     componentDidCatch(error,errorInfo){
+        console.log(error,errorInfo)
+    }
+
+    handleClick = () => {
         this.setState({
-            error:error,
-            errorInfo:errorInfo.componentStack
+            error:null,
+            errorInfo:null
         })
+        console.clear()
     }
     render() {
         if(this.state.error){
@@ -24,7 +30,8 @@ class ErrorBoundary extends Component {
                     <details style={{ whiteSpace: 'pre-wrap' }}>
                         {this.state.error && this.state.error.toString()}
                         <br />
-                        {this.state.errorInfo && this.state.errorInfo}
+                        {this.state.errorInfo && this.state.errorInfo}<br /><br />
+                        <button onClick={this.handleClick}>Restart</button>
                     </details>
                 </div>
             )
