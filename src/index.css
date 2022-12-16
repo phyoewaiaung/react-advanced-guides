@@ -49,3 +49,7 @@ body {
     margin-left: 20px;
   }
   
+  .App{
+    display: grid;
+    place-items: center;
+  }
