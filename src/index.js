@@ -15,6 +15,7 @@ const App = () => {
       <ErrorBoundary>
         <TestErrorBoundary />
       </ErrorBoundary>
+      <hr />
       </>
   )
 }
