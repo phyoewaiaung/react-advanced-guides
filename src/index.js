@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import ErrorBoundary from "./ErrorBoundary";
 import TestErrorBoundary from "./TestErrorBoundary";
 import TicTacToe from "./TicTacToe";
+import TestReducer from "./TestReducer";
 import './index.css';
 
 // ========================================
@@ -12,10 +13,12 @@ const App = () => {
       <>
         <TicTacToe />
         <hr />
-      <ErrorBoundary>
-        <TestErrorBoundary />
-      </ErrorBoundary>
-      <hr />
+        <ErrorBoundary>
+          <TestErrorBoundary />
+        </ErrorBoundary>
+        <hr />
+        <TestReducer />
+        <hr />
       </>
   )
 }
