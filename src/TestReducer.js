@@ -1,7 +1,8 @@
-import React, { useReducer, useState } from 'react'
-
+import React, { useContext, useReducer, useState } from 'react'
+import Context from './Context';
 
 const TestReducer = () => {
+    const {bgColor,setBgColor,paragraph} = useContext(Context);
     const [value, setValue] = useState("");
     const initialValue = {
         people: []
@@ -22,17 +23,18 @@ const TestReducer = () => {
         setValue("");
     }
   return (
-    <div> 
+    <div style={{backgroundColor:bgColor}}> 
         <h1>Learn Reducer Hook</h1><br />
         <form onSubmit={submitHandler}>
             <input type="text" value={value} onChange={e => setValue(e.target.value)} placeholder='enter text'/>
             <button type='submit'>submit</button>
         </form>
-        <ul>
+        <ul>    
             {state.people.map(person => {
                 return <li key={person.id}>{person.name}</li>
             })}
         </ul>
+        <p>{paragraph}</p>
     </div>
   )
 }
