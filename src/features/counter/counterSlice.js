@@ -16,8 +16,11 @@ const counterSlice = createSlice({
         },
         reset:(state,action)=> {
             state.count = 0;
+        },
+        test:(state,action)=> {
+            alert("THIS IS FROM DIFFERENT COMPONENT CALLED BY USING REDUX");
         }
     }
 })
-export const {increase,decrease,reset} = counterSlice.actions;
+export const {increase,decrease,reset,test} = counterSlice.actions;
 export default counterSlice.reducer;
