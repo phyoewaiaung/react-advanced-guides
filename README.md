@@ -5,6 +5,9 @@
  * **_React Time Travel_**
  * **_Error Boundaries_**
  * **_Reducer_**
+ * **_Context Api_**
+ * **_Redux_**
+ * **_React memo_**
  
  *You can run this project by following the steps that I mentioned below.*<br><br>
   &emsp;***Step1***: clone the github repo to your local project folder.<br>
