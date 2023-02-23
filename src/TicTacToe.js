@@ -130,7 +130,7 @@ class TicTacToe extends React.Component {
 
     return (
       <>
-        <h2>Learing React Time Travel</h2>
+        <h2>Learn React Time Travel</h2>
         <div className="game">
           <div className="game-board">
           <div>{status}</div>

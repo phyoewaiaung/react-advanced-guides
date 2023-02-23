@@ -7,9 +7,9 @@ const TestRedux = () => {
     const dispatch = useDispatch();
   return (
     <div>
-        <h1>
-            TestRedux
-        </h1>
+        <h2>
+            Learn redux 
+        </h2>
         <p>Count:{count}</p>
         <button onClick={()=>dispatch(increase())}>increase</button>
         <button onClick={()=>dispatch(decrease())}>decrease</button>

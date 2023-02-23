@@ -19,7 +19,7 @@ class TestErrorBoundary extends React.Component  {
         }
         return (
             <>
-                <h2>Learing React Error Boundaries</h2>
+                <h2>Learn React Error Boundaries</h2>
                 <div className="App"> 
                 <p style={{color:"orange",fontWeight:'bold'}}>Error Will Encounter When The Counter Reach 6.</p>
                 <b style={{fontSize:"20px"}}>{this.state.counter}</b>

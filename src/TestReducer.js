@@ -33,7 +33,7 @@ const TestReducer = () => {
     }
   return (
     <div style={{backgroundColor:bgColor}}> 
-        <h1>Learn Reducer Hook</h1><br />
+        <h2>Learn useReducer Hook</h2><br />
         <form onSubmit={submitHandler}>
             <input type="text" value={value} onChange={e => setValue(e.target.value)} placeholder='enter text'/>
             <button type='submit'>submit</button>
