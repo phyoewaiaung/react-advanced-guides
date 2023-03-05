@@ -12,6 +12,7 @@ import TestRedux from "./TestRedux";
 import './index.css';
 import TestUseRef from "./TestUseRef";
 import ChildToParent from "./ChildToParent";
+import User from "./features/learn-proptypes/user";
 
 const App = () => {
   const colorRef = useRef(null);
@@ -47,6 +48,7 @@ const App = () => {
             <hr />
               <ChildToParent callback={callback}/>
             <hr />
+              <User />
           </div>
         </Context.Provider>
       </Provider>
